@@ -1,0 +1,4 @@
+selenium
+bs4
+flask
+msedge-selenium-tools

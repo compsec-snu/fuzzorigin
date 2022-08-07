@@ -1,0 +1,3418 @@
+{
+    "EventTarget":{
+        "inherit": [],
+        "constructors": {
+            "EventTarget": {
+                "params": [],
+                "ret": "EventTarget"
+            }
+        },
+        "properties": {},
+        "methods": {
+            "addEventListener": {
+                "params": [["EVENT"], ["Function", "Eventhandler"], ["Boolean"]],
+                "ret": null,
+                "static": false
+            },
+            "removeEventListener": {
+                "params": [["EVENT"], ["Function"], ["Boolean"]],
+                "ret": null,
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "GlobalEventHandlers":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {},
+        "methods": {},
+        "events": ["abort", "animaticancel", "animatiend", "animatiiterati", "animatistart", "auxclick", "blur", "cancel", "canplay", "canplaythrough", "change", "click", "close", "ctextmenu", "dblclick", "drag", "dragend", "dragenter", "dragexit", "dragleave", "dragover", "dragstart", "drop", "duratichange", "emptied", "ended", "error", "focus", "formdata", "gotpointercapture", "input", "invalid", "keydown", "keyup", "load", "loadeddata", "loadedmetadata", "loadend", "loadstart", "lostpointercapture", "mousedown", "mouseenter", "mouseleave", "mousemove", "mouseout", "mouseover", "mouseup", "mousewheel", "pause", "play", "playing", "pointercancel", "pointerdown", "pointerenter", "pointerleave", "pointermove", "pointerout", "pointerover", "pointerrawupdate", "pointerup", "progress", "ratechange", "reset", "resize", "scroll", "securitypolicyviolati", "seeked", "seeking", "select", "selectichange", "selectstart", "show", "slotchange", "stalled", "submit", "suspend", "timeupdate", "touchcancel", "touchend", "touchmove", "touchstart", "transiticancel", "transitiend", "transitirun", "transitistart", "volumechange", "waiting", "wheel"]
+    },
+    "Node": {
+        "inherit": ["EventTarget"],
+        "constructors": {},
+        "properties": {
+            "baseURI": {
+                "read_only": true,
+                "ret": "DOMString"
+            },
+            "childNodes": {
+                "read_only": true,
+                "ret": "NodeList"
+            },
+            "firstChild": {
+                "read_only": true,
+                "ret": "Node"
+            },
+            "isConnected": {
+                "read_only": true,
+                "ret": "Boolean"
+            },
+            "lastChild": {
+                "read_only": true,
+                "ret": "Node"
+            },
+            "nextSibling": {
+                "read_only": true,
+                "ret": "Node"
+            },
+            "nodeName": {
+                "read_only": true,
+                "ret": "DOMString"
+            },
+            "nodeType": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "nodeValue": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "ownerDocument": {
+                "read_only": true,
+                "ret": "Document"
+            },
+            "parentNode": {
+                "read_only": true,
+                "ret": "Node"
+            },
+            "parentElement": {
+                "read_only": true,
+                "ret": "Element"
+            },
+            "previousSibling": {
+                "read_only": true,
+                "ret": "Node"
+            },
+            "textContent": {
+                "read_only": false,
+                "ret": "String"
+            }
+        },
+        "methods": {
+            "appendChild": {
+                "params": [["Node"]],
+                "ret": "DocumentFragment",
+                "static": false
+            },
+            "cloneNode": {
+                "params": [["Boolean"]],
+                "ret": "Node",
+                "static": false
+            },
+            "compareDocumentPosition": {
+                "params": [["Node"]],
+                "ret": "Integer",
+                "static": false
+            },
+            "contains": {
+                "params": [["Node"]],
+                "ret": "Boolean",
+                "static": false
+            },
+            "getRootNode": {
+                "params": [["Boolean"]],
+                "ret": "Node",
+                "static": false
+            },
+            "hasChildNodes": {
+                "params": [],
+                "ret": "Boolean",
+                "static": false
+            },
+            "insertBefore": {
+                "params": [["Node"], ["Node"]],
+                "ret": "Node",
+                "static": false
+            },
+            "isDefaultNamespace": {
+                "params": [["URI"]],
+                "ret": "Boolean",
+                "static": false
+            },
+            "isEqualNode": {
+                "params": [["Node"]],
+                "ret": "Boolean",
+                "static": false
+            },
+            "isSameNode": {
+                "params": [["Node"]],
+                "ret": "Boolean",
+                "static": false
+            },
+            "lookupPrefix": {
+                "params": [["URI"]],
+                "ret": "DOMString",
+                "static": false
+            },
+            "lookupNamespaceURI": {
+                "params": [["URI"]],
+                "ret": "DOMString",
+                "static": false
+            },
+            "normalize": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "replaceChild": {
+                "params": [["Node"], ["Node"]],
+                "ret": "Node",
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "Element": {
+        "inherit": ["Node"],
+        "constructors": {},
+        "properties": {
+            "assignedSlot": {
+                "read_only": true,
+                "ret": "HTMLSlotElement"
+            },
+            "attributes": {
+                "read_only": true,
+                "ret": "NamedNodeMap"
+            },
+            "childElementCount": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "children": {
+                "read_only": true,
+                "ret": "HTMLCollection_Element"
+            },
+            "classList": {
+                "read_only": true,
+                "ret": "DOMTokenList"
+            },
+            "className": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "clientHeight": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "clientLeft": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "clientTop": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "clientWidth": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "firstElementChild": {
+                "read_only": true,
+                "ret": "Element"
+            },
+            "id": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "innerHTML": {
+                "read_only": false,
+                "ret": "Markup"
+            },
+            "lastElementChild": {
+                "read_only": true,
+                "ret": "Element"
+            },
+            "localName": {
+                "read_only": true,
+                "ret": "DOMString"
+            },
+            "namespaceURI": {
+                "read_only": true,
+                "ret": "URI"
+            },
+            "nextElementSibling": {
+                "read_only": true,
+                "ret": "Element"
+            },
+            "outerHTML": {
+                "read_only": false,
+                "ret": "Markup"
+            },
+            "part": {
+                "read_only": false,
+                "ret": "DOMTokenList"
+            },
+            "prefix": {
+                "read_only": false,
+                "ret": "URI"
+            },
+            "previousElementSibling": {
+                "read_only": true,
+                "ret": "Element"
+            },
+            "scrollHeight": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "scrollLeft": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "scrollTop": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "scrollWidth": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "shadowRoot": {
+                "read_only": true,
+                "ret": "ShadowRoot"
+            },
+            "tagName": {
+                "read_only": true,
+                "ret": "TagString"
+            }
+        },
+        "methods": {
+            "after": {
+                "params": [["Node", "DOMString"]],
+                "ret": null,
+                "static": false
+            },
+            "attachShadow": {
+                "params": [["ShadowRootInit"]],
+                "ret": "ShadowRoot",
+                "static": false
+            },
+            "append": {
+                "params": [["Node", "DOMString"]],
+                "ret": null,
+                "static": false
+            },
+            "before": {
+                "params": [["Node", "DOMString"]],
+                "ret": null,
+                "static": false
+            },
+            "closest": {
+                "params": [["DOMString"]],
+                "ret": "Element",
+                "static": false
+            },
+            "getAttribute": {
+                "params": [["AttributeName"]],
+                "ret": "String",
+                "static": false
+            },
+            "getAttributeNames": {
+                "params": [],
+                "ret": "Array",
+                "static": false
+            },
+            "getAttributeNode": {
+                "params": [["AttributeName"]],
+                "ret": "Attr",
+                "static": false
+            },
+            "getAttributeNodeNS": {
+                "params": [["URI"], ["AttributeName"]],
+                "ret": "Attr",
+                "static": false
+            },
+            "getElementsByClassName": {
+                "params": [["DOMString"]],
+                "ret": "HTMLCollection_Element",
+                "static": false
+            },
+            "getElementsByTagName": {
+                "params": [["TagString"]],
+                "ret": "HTMLCollection_Element",
+                "static": false
+            },
+            "getElementsByTagNameNS": {
+                "params": [["URI"], ["DOMString"]],
+                "ret": "HTMLCollection_Element",
+                "static": false
+            },
+            "hasAttribute": {
+                "params": [["AttributeName"]],
+                "ret": "Boolean",
+                "static": false
+            },
+            "hasAttributeNS": {
+                "params": [["URI"], ["DOMString"]],
+                "ret": "Boolean",
+                "static": false
+            },
+            "insertAdjacentElement": {
+                "params": [],
+                "ret": "Element",
+                "static": false
+            },
+            "insertAdjacentHTML": {
+                "params": [["PositionString"], ["DOMString"]],
+                "ret": null,
+                "static": false
+            },
+            "insertAdjacentText": {
+                "params": [["PositionString"], ["DOMString"]],
+                "ret": null,
+                "static": false
+            },
+            "matches": {
+                "params": [["Selector"]],
+                "ret": "Boolean",
+                "static": false
+            },
+            "prepend": {
+                "params": [["Node", "DOMString"]],
+                "ret": null,
+                "static": false
+            },
+            "querySelector": {
+                "params": [["Selector"]],
+                "ret": "Element",
+                "static": false
+            },
+            "querySelectorAll": {
+                "params": [["Selector"]],
+                "ret": "NodeList",
+                "static": false
+            },
+            "remove": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "removeAttribute": {
+                "params": [["AttributeName"]],
+                "ret": null,
+                "static": false
+            },
+            "removeAttributeNode": {
+                "params": [["Attr"]],
+                "ret": null,
+                "static": false
+            },
+            "removeAttributeNS": {
+                "params": [["URI"], ["AttributeName"]],
+                "ret": null,
+                "static": false
+            },
+            "replaceChildren": {
+                "params": [["Node", "DOMString"]],
+                "ret": null,
+                "static": false
+            },
+            "replaceWith": {
+                "params": [["Node", "DOMString"]],
+                "ret": null,
+                "static": false
+            },
+            "requestFullscreen": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "requestPointerLock": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "scroll": {
+                "params": [["Integer"], ["Integer"]],
+                "ret": null,
+                "static": false
+            },
+            "scrollBy": {
+                "params": [["Integer"], ["Integer"]],
+                "ret": null,
+                "static": false
+            },
+            "scrollIntoView": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "scrollTo": {
+                "params": [["Integer"], ["Integer"]],
+                "ret": null,
+                "static": false
+            },
+            "setAttribute": {
+                "params": [["DOMString"], ["DOMString"]],
+                "ret": null,
+                "static": false
+            },
+            "setAttributeNode": {
+                "params": [["Attr"]],
+                "ret": null,
+                "static": false
+            },
+            "setAttributeNodeNS": {
+                "params": [["Attr"]],
+                "ret": "Attr",
+                "static": false
+            },
+            "toggleAttribute": {
+                "params": [["DOMString"]],
+                "ret": "Boolean",
+                "static": false
+            },
+            "webkitRequestFullScreen": {
+                "params": [],
+                "ret": null,
+                "static": false
+            }
+            
+        },
+        "events": ["fullscreenchange", "fullscreenerror", "cancel", "error", "scroll", "select", "show", "wheel", "copy", "cut", "paste", "blur", "focus", "fullscreenerror", "keydown", "keypress", "keyup", "auxclick", "click", "contextmenu", "dblclick", "mousedown", "mouseenter", "mouseleave", "mousemove", "mouseout", "mouseover", "mouseup", "touchcancel", "touchend", "touchmove", "touchstart", "webkitfullscreenchange"]
+    },
+    "Document":{
+        "inherit": ["Node", "GlobalEventHandlers"],
+        "constructors": {
+            "Document": {
+                "params": [],
+                "ret": "Document"
+            }
+        },
+        "properties": {
+            "activeElement": {
+                "read_only": true,
+                "ret": "Element"
+            },
+            "body": {
+                "read_only": false,
+                "ret": "Element"
+            },
+            "characterSet": {
+                "read_only": true,
+                "ret": "String"
+            },
+            "childElementCount": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "children": {
+                "read_only": true,
+                "ret": "HTMLCollection_Element"
+            },
+            "documentElement": {
+                "read_only": true,
+                "ret": "Element"
+            },
+            "documentURI": {
+                "read_only": true,
+                "ret": "URI"
+            },
+            "embeds": {
+                "read_only": true,
+                "ret": "HTMLCollection"
+            },
+            "firstElementChild": {
+                "read_only": true,
+                "ret": "Element"
+            },
+            "fonts": {
+                "read_only": false,
+                "ret": "FontFaceSet"
+            },
+            "forms": {
+                "read_only": true,
+                "ret": "HTMLCollection"
+            },
+            "fullscreenElement": {
+                "read_only": true,
+                "ret": "Element"
+            },
+            "head": {
+                "read_only": true,
+                "ret": "Element"
+            },
+            "hidden": {
+                "read_only": true,
+                "ret": "Boolean"
+            },
+            "images": {
+                "read_only": true,
+                "ret": "HTMLCollection"
+            },
+            "implementation": {
+                "read_only": true,
+                "ret": "DOMImplementation"
+            },
+            "lastElementChild": {
+                "read_only": true,
+                "ret": "Element"
+            },
+            "links": {
+                "read_only": true,
+                "ret": "HTMLCollection"
+            },
+            "pictureInPictureElement": {
+                "read_only": true,
+                "ret": "Element"
+            },
+            "pictureInPictureEnabled": {
+                "read_only": true,
+                "ret": "Boolean"
+            },
+            "plugins": {
+                "read_only": true,
+                "ret": "HTMLCollection"
+            },
+            "pointerLockElement": {
+                "read_only": true,
+                "ret": "Element"
+            },
+            "featurePolicy": {
+                "read_only": true,
+                "ret": "FeaturePolicy"
+            },
+            "scripts": {
+                "read_only": true,
+                "ret": "HTMLCollection"
+            },
+            "scrollingElement": {
+                "read_only": true,
+                "ret": "Element"
+            },
+            "styleSheets": {
+                "read_only": true,
+                "ret": "StyleSheetList"
+            },
+            "visibilityState": {
+                "read_only": true,
+                "ret": "String"
+            },
+            "cookie": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "defaultView": {
+                "read_only": true,
+                "ret": "Window"
+            },
+            "designMode": {
+                "read_only": false,
+                "ret": "OnOffString"
+            },
+            "dir": {
+                "read_only": false,
+                "ret": "rtlltrString"
+            },
+            "domain": {
+                "read_only": false,
+                "ret": "DomainString"
+            },
+            "lastModified": {
+                "read_only": true,
+                "ret": "String"
+            },
+            "location": {
+                "read_only": true,
+                "ret": "Location"
+            },
+            "readyState": {
+                "read_only": true,
+                "ret": "ReadyStateString"
+            },
+            "referrer": {
+                "read_only": true,
+                "ret": "URI"
+            },
+            "title": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "URL": {
+                "read_only": true,
+                "ret": "URI"
+            }
+        },
+        "methods": {
+            "adoptNode": {
+                "params": [["Node"]],
+                "ret": "Node",
+                "static": false
+            },
+            "append": {
+                "params": [["Node", "DOMString"]],
+                "ret": null,
+                "static": false
+            },
+            "createAttribute": {
+                "params": [["String"]],
+                "ret": "Attr",
+                "static": false
+            },
+            "createCDATASection": {
+                "params": [["String"]],
+                "ret": "Node",
+                "static": false
+            },
+            "createComment": {
+                "params": [["String"]],
+                "ret": "Node",
+                "static": false
+            },
+            "createDocumentFragment": {
+                "params": [],
+                "ret": "DocumentFragment",
+                "static": false
+            },
+            "createElement": {
+                "params": [["TagString"]],
+                "ret": "Element",
+                "static": false
+            },
+            "createElementNS": {
+                "params": [["URI"]],
+                "ret": "Element",
+                "static": false
+            },
+            "createEvent": {
+                "params": [["UIEvents", "MouseEvents", "MutationEvents", "HTMLEvents"]],
+                "ret": "Event",
+                "static": false
+            },
+            "createNodeIterator": {
+                "params": [["Node"]],
+                "ret": "NodeIterator",
+                "static": false
+            },
+            "createProcessingInstruction": {
+                "params": [["String"], ["String"]],
+                "ret": "ProcessingInstruction",
+                "static": false
+            },
+            "createRange": {
+                "params": [],
+                "ret": "Range",
+                "static": false
+            },
+            "createTextNode": {
+                "params": [["String"]],
+                "ret": "Text",
+                "static": false
+            },
+            "createTreeWalker": {
+                "params": [["Node"]],
+                "ret": "TreeWalker",
+                "static": false
+            },
+            "elementFromPoint": {
+                "params": [["Integer"], ["Integer"]],
+                "ret": "Element",
+                "static": false
+            },
+            "elementsFromPoint": {
+                "params": [["Integer"], ["Integer"]],
+                "ret": "HTMLCollection_Element",
+                "static": false
+            },
+            "getAnimations": {
+                "params": [],
+                "ret": "Array",
+                "static": false
+            },
+            "getElementById": {
+                "params": [["IdString"]],
+                "ret": "Element",
+                "static": false
+            },
+            "getElementsByClassName": {
+                "params": [["ClassString"]],
+                "ret": "HTMLCollection_Element",
+                "static": false
+            },
+            "getElementsByTagName": {
+                "params": [["TagString"]],
+                "ret": "HTMLCollection_Element",
+                "static": false
+            },
+            "getSelection": {
+                "params": [],
+                "ret": "Selection",
+                "static": false
+            },
+            "importNode": {
+                "params": [["Node"], ["Boolean"]],
+                "ret": "Node",
+                "static": false
+            },
+            "prepend": {
+                "params": [["Node", "DOMString"]],
+                "ret": null,
+                "static": false
+            },
+            "querySelectorAll": {
+                "params": [["Selector"]],
+                "ret": "NodeList",
+                "static": false
+            },
+            "querySelector": {
+                "params": [["Selector"]],
+                "ret": "HTMLElement",
+                "static": false
+            },
+            "replaceChildren": {
+                "params": [["Node", "DOMString"]],
+                "ret": "NodeList",
+                "static": false
+            },
+            "clear": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "close": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "getElementsByName": {
+                "params": [["NameString"]],
+                "ret": "NodeList",
+                "static": false
+            },
+            "hasFocus": {
+                "params": [],
+                "ret": "Boolean",
+                "static": false
+            },
+            "open": {
+                "params": [],
+                "ret": "Document",
+                "static": false
+            },
+            "write": {
+                "params": [["Markup"]],
+                "ret": null,
+                "static": false
+            },
+            "writeln": {
+                "params": [["Markup"]],
+                "ret": null,
+                "static": false
+            },
+            "webkitExitFullscreen": {
+                "params": [],
+                "ret": null,
+                "static": false
+            }
+        },
+        "events": ["afterscriptexecute", "beforescriptexecute", "copy", "cut", "fullscreenchange", "fullscreenerror", "paste", "readystatechange", "selectionchange", "visibilitychange", "scroll", "wheel", "animationcancel", "animationend", "animationiteration", "animationstart", "drag", "dragend", "dragenter", "dragleave", "dragover", "dragstart", "drop", "keydown", "keypress", "keyup", "selectionchange", "selectstart", "touchcancel", "touchend", "touchmove", "touchstart", "transitioncancel", "transitionend", "transitionrun", "transitionstart"]
+    },
+    "NodeList":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {
+            "length": {
+                "read_only": true,
+                "ret": "Integer"
+            }
+        },
+        "methods": {
+            "item": {
+                "params": [["Integer"]],
+                "ret": "Node",
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "HTMLCollection":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {
+            "length": {
+                "read_only": true,
+                "ret": "Integer"
+            }
+        },
+        "methods": {
+            "item": {
+                "params": [["Integer"]],
+                "ret": "Node",
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "HTMLCollection_Element":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {
+            "length": {
+                "read_only": true,
+                "ret": "Integer"
+            }
+        },
+        "methods": {
+            "item": {
+                "params": [["Integer"]],
+                "ret": "Element",
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "HTMLCollection_Iframe":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {
+            "length": {
+                "read_only": true,
+                "ret": "Integer"
+            }
+        },
+        "methods": {
+            "item": {
+                "params": [["Integer"]],
+                "ret": "HTMLIFrameElement",
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "HTMLCollection_Window":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {
+            "length": {
+                "read_only": true,
+                "ret": "Integer"
+            }
+        },
+        "methods": {
+            "item": {
+                "params": [["Integer"]],
+                "ret": "Window",
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "Array":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {},
+        "methods": {
+            "item": {
+                "params": [["Integer"]],
+                "ret": "Object",
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "DOMStringList":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {
+            "length": {
+                "read_only": true,
+                "ret": "Integer"
+            }
+        },
+        "methods": {
+            "item": {
+                "params": [["Integer"]],
+                "ret": "DOMString",
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "DOMTokenList":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {
+            "length": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "value": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {
+            "item": {
+                "params": [["Integer"]],
+                "ret": "DOMString",
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "DOMImplementation":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {},
+        "methods": {
+            "createHTMLDocument": {
+                "params": [["DOMString"]],
+                "ret": "Document",
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "DocumentFragment":{
+        "inherit": ["Node"],
+        "constructors": {},
+        "properties": {
+            "childElementCount": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "children": {
+                "read_only": true,
+                "ret": "HTMLCollection"
+            },
+            "firstElementChild": {
+                "read_only": true,
+                "ret": "Element"
+            },
+            "lastElementChild": {
+                "read_only": true,
+                "ret": "Element"
+            }
+        },
+        "methods": {
+            "append": {
+                "params": [["Node", "DOMString"]],
+                "ret": null,
+                "static": false
+            },
+            "prepend": {
+                "params": [["Node", "DOMString"]],
+                "ret": null,
+                "static": false
+            },
+            "querySelector": {
+                "params": [["Selector"]],
+                "ret": "Element",
+                "static": false
+            },
+            "querySelectorAll": {
+                "params": [["Selector"]],
+                "ret": "NodeList",
+                "static": false
+            },
+            "replaceChildren": {
+                "params": [["Node", "DOMString"]],
+                "ret": null,
+                "static": false
+            },
+            "getElementById": {
+                "params": [["IdString"]],
+                "ret": "Element",
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "HTMLElement":{
+        "inherit": ["Element", "GlobalEventHandlers"],
+        "constructors": {},
+        "properties": {
+            "accessKey": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "accessKeyLabel": {
+                "read_only": true,
+                "ret": "String"
+            },
+            "contentEditable": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "isContentEditable": {
+                "read_only": true,
+                "ret": "Boolean"
+            },
+            "hidden": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "inert": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "innerText": {
+                "read_only": false,
+                "ret": "Markup"
+            },
+            "lang": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "title": {
+                "read_only": false,
+                "ret": "String"
+            }
+        },
+        "methods": {
+            "blur": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "click": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "focus": {
+                "params": [],
+                "ret": null,
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "Location":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {
+            "ancestorOrigins": {
+                "read_only": true,
+                "ret": "DOMStringList"
+            },
+            "href": {
+                "read_only": false,
+                "ret": "HrefString"
+            },
+            "protocol": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "host": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "hostname": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "port": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "pathname": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "search": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "hash": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "origin": {
+                "read_only": true,
+                "ret": "String"
+            }
+        },
+        "methods": {
+            "assign": {
+                "params": [["URL"]],
+                "ret": null,
+                "static": false
+            },
+            "reload": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "replace": {
+                "params": [["URL"]],
+                "ret": null,
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "NodeIterator":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {
+            "root": {
+                "read_only": true,
+                "ret": "Node"
+            }
+        },
+        "methods": {
+            "previousNode": {
+                "params": [],
+                "ret": "Node",
+                "static": false
+            },
+            "nextNode": {
+                "params": [],
+                "ret": "Node",
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "Attr":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {
+            "name": {
+                "read_only": true,
+                "ret": "String"
+            },
+            "value": {
+                "read_only": false,
+                "ret": "String"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLAnchorElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "download": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "hash": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "host": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "hostname": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "href": {
+                "read_only": false,
+                "ret": "HrefString"
+            },
+            "origin": {
+                "read_only": true,
+                "ret": "String"
+            },
+            "password": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "pathname": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "port": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "protocol": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "referrerPolicy": {
+                "read_only": false,
+                "ret": "ReferrerPolicyString"
+            },
+            "rel": {
+                "read_only": false,
+                "ret": "RelString"
+            },
+            "search": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "target": {
+                "read_only": false,
+                "ret": "TargetString"
+            },
+            "text": {
+                "read_only": false,
+                "ret": "String"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLAreaElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "alt": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "coords": {
+                "read_only": false,
+                "ret": "CoordsString"
+            },
+            "download": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "hash": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "host": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "hostname": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "href": {
+                "read_only": false,
+                "ret": "HrefString"
+            },
+            "origin": {
+                "read_only": true,
+                "ret": "String"
+            },
+            "password": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "pathname": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "port": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "protocol": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "referrerPolicy": {
+                "read_only": false,
+                "ret": "ReferrerPolicyString"
+            },
+            "rel": {
+                "read_only": false,
+                "ret": "RelString"
+            },
+            "search": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "shape": {
+                "read_only": false,
+                "ret": "ShapeString"
+            },
+            "target": {
+                "read_only": false,
+                "ret": "TargetString"
+            },
+            "username": {
+                "read_only": false,
+                "ret": "String"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLAudioElement":{
+        "inherit": ["HTMLMediaElement"],
+        "constructors": {},
+        "properties": {},
+        "methods": {},
+        "events": []
+    },
+    "HTMLBRElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "clear": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLBaseElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "href": {
+                "read_only": false,
+                "ret": "HrefString"
+            },
+            "target": {
+                "read_only": false,
+                "ret": "TargetString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLBodyElement":{
+        "inherit": ["HTMLElement", "WindowEventHandlers"],
+        "constructors": {},
+        "properties": {},
+        "methods": {},
+        "events": []
+    },
+    "HTMLButtonElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "accessKey": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "autofocus": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "disabled": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "form": {
+                "read_only": true,
+                "ret": "HTMLFormElement"
+            },
+            "formAction": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "formMethod": {
+                "read_only": false,
+                "ret": "MethodString"
+            },
+            "formNoValidate": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "formTarget": {
+                "read_only": false,
+                "ret": "TargetString"
+            },
+            "name": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "type": {
+                "read_only": false,
+                "ret": "TypeString"
+            },
+            "value": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {
+            "checkValidity":{
+                "params": [],
+                "ret": "Boolean",
+                "static": false
+            },
+            "reportValidity":{
+                "params": [],
+                "ret": "Boolean",
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "HTMLDListElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "compact": {
+                "read_only": false,
+                "ret": "Boolean"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLDataElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "value": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLDataListElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "options": {
+                "read_only": false,
+                "ret": "HTMLCollection_HTMLOptionElement"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLDialogElement":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {
+            "open": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "returnValue": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {
+            "close": {
+                "params": [],
+                "ret": null,
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "HTMLDivElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "align": {
+                "read_only": false,
+                "ret": "AlignString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLEmbedElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "align": {
+                "read_only": false,
+                "ret": "AlignString"
+            },
+            "src": {
+                "read_only": false,
+                "ret": "SrcString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLFieldSetElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "disabled": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "form": {
+                "read_only": false,
+                "ret": "HTMLCollection_Element"
+            },
+            "name": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {
+            "checkValidity":{
+                "params": [],
+                "ret": "Boolean",
+                "static": false
+            },
+            "reportValidity":{
+                "params": [],
+                "ret": "Boolean",
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "HTMLFormElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "elements": {
+                "read_only": true,
+                "ret": "HTMLCollection_Element"
+            },
+            "length": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "name": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "method": {
+                "read_only": false,
+                "ret": "MethodString"
+            },
+            "target": {
+                "read_only": false,
+                "ret": "TargetString"
+            },
+            "autocomplete": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "noValidate": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "action": {
+                "read_only": false,
+                "ret": "JavascriptConsoleString"
+            }
+        },
+        "methods": {
+            "checkValidity":{
+                "params": [],
+                "ret": "Boolean",
+                "static": false
+            },
+            "reportValidity":{
+                "params": [],
+                "ret": "Boolean",
+                "static": false
+            },
+            "reset":{
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "submit":{
+                "params": [],
+                "ret": null,
+                "static": false
+            }
+        },
+        "events": ["formdata", "reset", "submit"]
+    },
+    "HTMLHRElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "align": {
+                "read_only": false,
+                "ret": "AlignString"
+            },
+            "color": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "noshade": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "size": {
+                "read_only": false,
+                "ret": "Integer"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLHeadElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {},
+        "methods": {},
+        "events": []
+    },
+    "HTMLHeadingElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "align": {
+                "read_only": false,
+                "ret": "AlignString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLHtmlElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "version": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLIFrameElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "align": {
+                "read_only": false,
+                "ret": "AlignString"
+            },
+            "allowfullscreen": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "allowPaymentRequest": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "contentDocument": {
+                "read_only": false,
+                "ret": "Document"
+            },
+            "contentWindow": {
+                "read_only": false,
+                "ret": "Window"
+            },
+            "frameBorder": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "name": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "featurePolicy": {
+                "read_only": false,
+                "ret": "FeaturePolicyString"
+            },
+            "referrerPolicy": {
+                "read_only": false,
+                "ret": "ReferrerPolicyString"
+            },
+            "sandbox": {
+                "read_only": false,
+                "ret": "SandboxString"
+            },
+            "scrolling": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "src": {
+                "read_only": false,
+                "ret": "IframeSrcString"
+            },
+            "srcdoc": {
+                "read_only": false,
+                "ret": "IframeSrcdocString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLImageElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "alt": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "complete": {
+                "read_only": true,
+                "ret": "Boolean"
+            },
+            "crossOrigin": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "decoding": {
+                "read_only": false,
+                "ret": "RefString"
+            },
+            "height": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "isMap": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "loading": {
+                "read_only": false,
+                "ret": "EagerLazyString"
+            },
+            "naturalHeight": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "naturalWidth": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "referrerPolicy": {
+                "read_only": false,
+                "ret": "ReferrerPolicyString"
+            },
+            "src": {
+                "read_only": false,
+                "ret": "SrcString"
+            },
+            "width": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "x": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "y": {
+                "read_only": true,
+                "ret": "Integer"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLInputElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "form": {
+                "read_only": true,
+                "ret": "HTMLFormElement"
+            },
+            "formAction": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "formMethod": {
+                "read_only": false,
+                "ret": "MethodString"
+            },
+            "formNoValidate": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "formTarget": {
+                "read_only": false,
+                "ret": "TargetString"
+            },
+            "type": {
+                "read_only": false,
+                "ret": "InputtypeString"
+            },
+            "disabled": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "autofocus": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "required": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "value": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "validity": {
+                "read_only": true,
+                "ret": "ValidityState"
+            },
+            "validationMessage": {
+                "read_only": true,
+                "ret": "String"
+            },
+            "willValidate": {
+                "read_only": true,
+                "ret": "Boolean"
+            },
+            "checked": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "defaultChecked": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "indeterminate": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "src": {
+                "read_only": false,
+                "ret": "SrcString"
+            },
+            "autocomplete": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {
+            "blur": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "click": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "focus": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "select": {
+                "params": [],
+                "ret": null,
+                "static": false
+            }
+        },
+        "events": ["input", "invalid", "search"]
+    },
+    "HTMLLIElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "value": {
+                "read_only": false,
+                "ret": "Integer"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLLabelElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "control": {
+                "read_only": true,
+                "ret": "HTMLElement"
+            },
+            "form": {
+                "read_only": true,
+                "ret": "HTMLFormElement"
+            },
+            "htmlFor": {
+                "read_only": true,
+                "ret": "String"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLLegendElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "accessKey": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "form": {
+                "read_only": true,
+                "ret": "HTMLFormElement"
+            },
+            "align": {
+                "read_only": false,
+                "ret": "AlignString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLLinkElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "as": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "disabled": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "href": {
+                "read_only": false,
+                "ret": "HrefString"
+            },
+            "referrerPolicy": {
+                "read_only": false,
+                "ret": "ReferrerPolicyString"
+            },
+            "rel": {
+                "read_only": false,
+                "ret": "RelString"
+            },
+            "relList": {
+                "read_only": true,
+                "ret": "DOMTokenList"
+            },
+            "target": {
+                "read_only": false,
+                "ret": "TargetString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLMapElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "name": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "areas": {
+                "read_only": true,
+                "ret": "HTMLCollection_HTMLAreaElement"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLMediaElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "audioTracks": {
+                "read_only": false,
+                "ret": "AudioTrackList"
+            },
+            "autoplay": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "buffered": {
+                "read_only": false,
+                "ret": "TimeRanges"
+            },
+            "controls": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "controlsList": {
+                "read_only": true,
+                "ret": "DOMTokenList"
+            },
+            "currentSrc": {
+                "read_only": true,
+                "ret": "DOMString"
+            },
+            "defaultMuted": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "defaultPlaybackRate": {
+                "read_only": false,
+                "ret": "Double"
+            },
+            "disableRemotePlayback": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "duration": {
+                "read_only": true,
+                "ret": "Double"
+            },
+            "ended": {
+                "read_only": true,
+                "ret": "Boolean"
+            },
+            "error": {
+                "read_only": true,
+                "ret": "MediaError"
+            },
+            "loop": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "muted": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "networkState": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "paused": {
+                "read_only": true,
+                "ret": "Boolean"
+            },
+            "playbackRate": {
+                "read_only": false,
+                "ret": "Double"
+            },
+            "played": {
+                "read_only": true,
+                "ret": "TimeRanges"
+            },
+            "preload": {
+                "read_only": false,
+                "ret": "PreloadString"
+            },
+            "readyState": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "src": {
+                "read_only": false,
+                "ret": "SrcString"
+            }
+        },
+        "methods": {
+            "load": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "pause": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "play": {
+                "params": [],
+                "ret": "Promise",
+                "static": false
+            }
+        },
+        "events": ["encrypted", "waitingforkey", "abort", "canplay", "canplaythrough", "durationchange", "emptied", "ended", "error", "loadeddata", "loadedmetadata", "loadstart", "pause", "play", "playing", "progress", "ratechange", "seeked", "seeking", "stalled", "suspend", "timeupdate", "volumechange", "waiting"]
+    },
+    "HTMLMetaElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "content": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "httpEquiv": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "name": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "scheme": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLMeterElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "high": {
+                "read_only": false,
+                "ret": "Double"
+            },
+            "low": {
+                "read_only": false,
+                "ret": "Double"
+            },
+            "max": {
+                "read_only": false,
+                "ret": "Double"
+            },
+            "min": {
+                "read_only": false,
+                "ret": "Double"
+            },
+            "optimum": {
+                "read_only": false,
+                "ret": "Double"
+            },
+            "value": {
+                "read_only": false,
+                "ret": "Double"
+            },
+            "labels": {
+                "read_only": false,
+                "ret": "NodeList"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLModElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "cite": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "dateTime": {
+                "read_only": false,
+                "ret": "DateTimeString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLOListElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "reversed": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "start": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "type": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "compact": {
+                "read_only": false,
+                "ret": "Boolean"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLObjectElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "align": {
+                "read_only": false,
+                "ret": "AlignString"
+            },
+            "archive": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "code": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "codeBase": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "codeType": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "contentDocument": {
+                "read_only": false,
+                "ret": "Document"
+            },
+            "contentWindow": {
+                "read_only": false,
+                "ret": "Window"
+            },
+            "data": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "declare": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "form": {
+                "read_only": true,
+                "ret": "HTMLFormElement"
+            },
+            "hspace": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "name": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "standby": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "validationMessage": {
+                "read_only": true,
+                "ret": "DOMString"
+            },
+            "validity": {
+                "read_only": true,
+                "ret": "ValidityState"
+            }
+        },
+        "methods": {
+            "checkValidity": {
+                "params": [],
+                "ret": null,
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "HTMLOptGroupElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "disabled": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "label": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLOptionElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "defaultSelected": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "disabled": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "form": {
+                "read_only": true,
+                "ret": "HTMLFormElement"
+            },
+            "index": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "label": {
+                "read_only": true,
+                "ret": "DOMString"
+            },
+            "selected": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "text": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "value": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLOutputElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "defaultValue": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "form": {
+                "read_only": true,
+                "ret": "HTMLFormElement"
+            },
+            "htmlFor": {
+                "read_only": true,
+                "ret": "DOMTokenList"
+            },
+            "labels": {
+                "read_only": true,
+                "ret": "NodeList"
+            },
+            "name": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "type": {
+                "read_only": true,
+                "ret": "DOMString"
+            },
+            "validationMessage": {
+                "read_only": true,
+                "ret": "DOMString"
+            },
+            "validity": {
+                "read_only": true,
+                "ret": "ValidityState"
+            },
+            "value": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLParagraphElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "align": {
+                "read_only": false,
+                "ret": "AlignString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLParamElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "name": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "value": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "type": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "valueType": {
+                "read_only": false,
+                "ret": "ValueTypeString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLPictureElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {},
+        "methods": {},
+        "events": []
+    },
+    "HTMLPreElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "width": {
+                "read_only": false,
+                "ret": "Integer"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLProgressElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "max": {
+                "read_only": false,
+                "ret": "Double"
+            },
+            "position": {
+                "read_only": true,
+                "ret": "Double"
+            },
+            "labels": {
+                "read_only": true,
+                "ret": "NodeList"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLQuoteElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "cite": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLScriptElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "type": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "src": {
+                "read_only": false,
+                "ret": "SrcString"
+            },
+            "event": {
+                "read_only": false,
+                "ret": "EVENT"
+            },
+            "charset": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "async": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "defer": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "text": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "noModule": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "referrerPolicy": {
+                "read_only": false,
+                "ret": "ReferrerPolicyString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLSelectElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "autofocus": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "disabled": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "form": {
+                "read_only": true,
+                "ret": "HTMLFormElement"
+            },
+            "labels": {
+                "read_only": true,
+                "ret": "NodeList"
+            },
+            "length": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "multiple": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "name": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "options": {
+                "read_only": true,
+                "ret": "HTMLOptionsCollection"
+            },
+            "required": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "selectedIndex": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "selectedOptions": {
+                "read_only": true,
+                "ret": "HTMLCollection"
+            },
+            "size": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "type": {
+                "read_only": true,
+                "ret": "DOMString"
+            },
+            "value": {
+                "read_only": true,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {
+            "value": {
+                "params": [["HTMLOptionElement", "HTMLOptGroupElement"]],
+                "ret": null,
+                "static": false
+            },
+            "blur": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "focus": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "item": {
+                "params": [["Integer"]],
+                "ret": "HTMLOptionElement",
+                "static": false
+            },
+            "namedItem": {
+                "params": [["DOMString"]],
+                "ret": "HTMLOptionElement",
+                "static": false
+            },
+            "remove": {
+                "params": [["Integer"]],
+                "ret": null,
+                "static": false
+            }
+        },
+        "events": ["input"]
+    },
+    "HTMLSourceElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "media": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "sizes": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "src": {
+                "read_only": false,
+                "ret": "SrcString"
+            },
+            "srcset": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "type": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLSpanElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {},
+        "methods": {},
+        "events": []
+    },
+    "HTMLStyleElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "media": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "type": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "disabled": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "sheet": {
+                "read_only": true,
+                "ret": "StyleSheet"
+            },
+            "scoped": {
+                "read_only": false,
+                "ret": "Boolean"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLTableCaptionElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "align": {
+                "read_only": false,
+                "ret": "AlignString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLTableCellElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "abbr": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "cellIndex": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "colSpan": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "headers": {
+                "read_only": false,
+                "ret": "DOMSettableTokenList"
+            },
+            "rowSpan": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "scope": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLTableColElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "align": {
+                "read_only": false,
+                "ret": "AlignString"
+            },
+            "ch": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "chOff": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "span": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "vAlign": {
+                "read_only": false,
+                "ret": "vAlignString"
+            },
+            "width": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLTableElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "caption": {
+                "read_only": false,
+                "ret": "HTMLTableCaptionElement"
+            },
+            "tHead": {
+                "read_only": false,
+                "ret": "HTMLTableSectionElement"
+            },
+            "tFoot": {
+                "read_only": false,
+                "ret": "HTMLTableSectionElement"
+            },
+            "rows": {
+                "read_only": true,
+                "ret": "HTMLCollection"
+            },
+            "tBodies": {
+                "read_only": true,
+                "ret": "HTMLCollection"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLTableHeaderCellElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "abbr": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "cellIndex": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "colSpan": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "headers": {
+                "read_only": false,
+                "ret": "DOMSettableTokenList"
+            },
+            "rowSpan": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "scope": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLTableDataCellElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "abbr": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "cellIndex": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "colSpan": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "headers": {
+                "read_only": false,
+                "ret": "DOMSettableTokenList"
+            },
+            "rowSpan": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "scope": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLTableRowElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "cells": {
+                "read_only": true,
+                "ret": "HTMLCollection"
+            },
+            "rowIndex": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "sectionRowIndex": {
+                "read_only": false,
+                "ret": "Integer"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLTableSectionElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "align": {
+                "read_only": false,
+                "ret": "AlignString"
+            },
+            "row": {
+                "read_only": true,
+                "ret": "HTMLCollection"
+            },
+            "ch": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "chOff": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "vAlign": {
+                "read_only": false,
+                "ret": "vAlignString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLTemplateElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "content": {
+                "read_only": true,
+                "ret": "DocumentFragment"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLTextAreaElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "accessKey": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "autocapitalize": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "autocomplete": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "autofocus": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "cols": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "defaultValue": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "disabled": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "form": {
+                "read_only": true,
+                "ret": "HTMLFormElement"
+            },
+            "maxLength": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "minLength": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "name": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "placeholder": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "readOnly": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "required": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "rows": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "selectionDirection": {
+                "read_only": false,
+                "ret": "SelectionDirectionString"
+            },
+            "selectionEnd": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "selectionStart": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "tabIndex": {
+                "read_only": false,
+                "ret": "Integer"
+            },
+            "textLength": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "type": {
+                "read_only": true,
+                "ret": "String"
+            },
+            "value": {
+                "read_only": true,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {
+            "blur": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "focus": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "select": {
+                "params": [],
+                "ret": null,
+                "static": false
+            }
+        },
+        "events": ["input"]
+    },
+    "HTMLTimeElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "dateTime": {
+                "read_only": false,
+                "ret": "DateTimeString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLTitleElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "text": {
+                "read_only": false,
+                "ret": "DOMString"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLTrackElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "kind": {
+                "read_only": false,
+                "ret": "KindString"
+            },
+            "src": {
+                "read_only": false,
+                "ret": "SrcString"
+            },
+            "label": {
+                "read_only": false,
+                "ret": "SrcString"
+            },
+            "default": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "readyState": {
+                "read_only": true,
+                "ret": "Integer"
+            },
+            "track": {
+                "read_only": true,
+                "ret": "TextTrack"
+            }
+        },
+        "methods": {},
+        "events": ["cuechange"]
+    },
+    "HTMLUListElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {
+            "type": {
+                "read_only": false,
+                "ret": "DOMString"
+            },
+            "compact": {
+                "read_only": false,
+                "ret": "Boolean"
+            }
+        },
+        "methods": {},
+        "events": []
+    },
+    "HTMLUnknownElement":{
+        "inherit": ["HTMLElement"],
+        "constructors": {},
+        "properties": {},
+        "methods": {},
+        "events": []
+    },
+    "HTMLVideoElement":{
+        "inherit": ["HTMLMediaElement"],
+        "constructors": {},
+        "properties": {},
+        "methods": {},
+        "events": []
+    },
+    "Console":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {},
+        "methods": {
+            "log": {
+                "params": [["ConsoleLogString"]],
+                "ret": null,
+                "static": false
+            },
+            "time": {
+                "params": [["TimeString"]],
+                "ret": null,
+                "static": false
+            },
+            "timeEnd": {
+                "params": [["TimeString"]],
+                "ret": null,
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "URL":{
+        "inherit": [],
+        "constructors": {
+            "URL": {
+                "params": [["URI"]],
+                "ret": "URL"
+            }
+        },
+        "properties": {
+            "href": {
+                "read_only": false,
+                "ret": "HrefString"
+            },
+            "protocol": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "host": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "hostname": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "port": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "pathname": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "search": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "hash": {
+                "read_only": false,
+                "ret": "String"
+            },
+            "origin": {
+                "read_only": true,
+                "ret": "String"
+            }
+        },
+        "methods": {
+            "createObjectURL": {
+                "params": [["File", "Blob", "MediaSource"]],
+                "ret": "DOMString",
+                "static": true
+            },
+            "revokeObjectURL": {
+                "params": [["DOMString"]],
+                "ret": null,
+                "static": true
+            }
+        },
+        "events": []
+    },
+    "Blob":{
+        "inherit": [],
+        "constructors": {
+            "Blob": {
+                "params": [],
+                "ret": "Blob"
+            }
+        },
+        "properties": {},
+        "methods": {
+            "arrayBuffer": {
+                "params": [],
+                "ret": "Promise",
+                "static": false
+            },
+            "slice": {
+                "params": [],
+                "ret": "Blob",
+                "static": false
+            },
+            "stream": {
+                "params": [],
+                "ret": "ReadableStream",
+                "static": false
+            },
+            "text": {
+                "params": [],
+                "ret": "Promise",
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "File":{
+        "inherit": ["Blob"],
+        "constructors": {
+            "File": {
+                "params": [["Array"], ["String"]],
+                "ret": "File"
+            }
+        },
+        "properties": {},
+        "methods": {},
+        "events": []
+    },
+    "MediaSource":{
+        "inherit": ["EventTarget"],
+        "constructors": {
+            "MediaSource": {
+                "params": [],
+                "ret": "MediaSource"
+            }
+        },
+        "properties": {},
+        "methods": {},
+        "events": []
+    },
+    "XMLHttpRequestEventTarget":{
+        "inherit": ["EventTarget"],
+        "constructors": {},
+        "properties": {},
+        "methods": {},
+        "events": []
+    },
+    "XMLHttpRequest":{
+        "inherit": ["XMLHttpRequestEventTarget"],
+        "constructors": {
+            "XMLHttpRequest": {
+                "params": [],
+                "ret": "XMLHttpRequest"
+            }
+        },
+        "properties": {},
+        "methods": {
+            "open": {
+                "params": [["HTTPMethodString"], ["URI"]],
+                "ret": null,
+                "static": false
+            },
+            "send": {
+                "params": [],
+                "ret": null,
+                "static": false
+            }
+
+        },
+        "events": []
+    },
+    "Window":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {
+            "console": {
+                "read_only": true,
+                "ret": "Console"
+            },
+            "document": {
+                "read_only": true,
+                "ret": "Document"
+            },
+            "frameElement": {
+                "read_only": true,
+                "ret": "HTMLIFrameElement"
+            },
+            "frames": {
+                "read_only": true,
+                "ret": "HTMLCollection_Window"
+            },
+            "fullScreen": {
+                "read_only": false,
+                "ret": "Boolean"
+            },
+            "history": {
+                "read_only": true,
+                "ret": "History"
+            },
+            "location": {
+                "read_only": false,
+                "ret": "Location"
+            },
+            "parent": {
+                "read_only": true,
+                "ret": "Window"
+            },
+            "top": {
+                "read_only": true,
+                "ret": "Window"
+            },
+            "window": {
+                "read_only": true,
+                "ret": "Window"
+            }
+        },
+        "methods": {
+            "blur": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "close": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "focus": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "open": {
+                "params": [["URI"]],
+                "ret": "Window",
+                "static": false
+            },
+            "stop": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "alert": {
+                "params": [["ConsoleLogString"]],
+                "ret": null,
+                "static": false
+            }
+        },
+        "events": ["load", "unload"]
+    },
+    "History":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {},
+        "methods": {
+            "back":{
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "forward": {
+                "params": [],
+                "ret": null,
+                "static": false
+            },
+            "go": {
+                "params": [["Integer"]],
+                "ret": null,
+                "static": false
+            },
+            "pushState":{
+                "params": [["DOMString"], ["DOMString"], ["URI"]],
+                "ret": null,
+                "static": false
+            },
+            "replaceState":{
+                "params": [["DOMString"], ["DOMString"], ["URI"]],
+                "ret": null,
+                "static": false
+            }
+        },
+        "events": []
+    },
+    "Built-in":{
+        "inherit": [],
+        "constructors": {},
+        "properties": {
+            "onload": {
+                "read_only": false,
+                "ret": "Function"
+            },
+            "onclick": {
+                "read_only": false,
+                "ret": "Function"
+            }
+        },
+        "methods": {
+            "clearInterval": {
+                "params": [["Interval"]],
+                "ret": null,
+                "static": false
+            },
+            "setInterval": {
+                "params": [["Function"], ["Integer"]],
+                "ret": "Interval",
+                "static": false
+            }, 
+            "setTimeout": {
+                "params": [["Function"], ["Integer"]],
+                "ret": null,
+                "static": false
+            },
+            "eval": {
+                "params": [["ScriptString"]],
+                "ret": null,
+                "static": false
+            }
+        },
+        "events": []
+    }
+}
+

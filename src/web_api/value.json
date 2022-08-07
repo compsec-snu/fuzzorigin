@@ -1,0 +1,32 @@
+{
+    "Boolean": ["true", "false"],
+    "rtlltrString": ["rtl", "ltr"],
+    "OnOffString": ["on", "off"],
+    "ReferrerPolicyString": ["no-referrer", "no-referrer-when-downgrade", "origin", "origin-when-cross-origin", "same-origin", "strict-origin", "strict-origin-when-cross-origin", "unsafe-url"],
+    "RelString": ["alternate", "author", "bookmark", "external", "help", "license", "next", "nofollow", "noreferrer", "noopener", "prev", "search", "tag"],
+    "TargetString": ["_blank", "_parent", "_self", "_top"],
+    "CoordsString": ["10, 10, 10", "20, 20, 20, 20"],
+    "ShapeString": ["rect", "circle", "poly", "default"],
+    "MethodString": ["get", "post", "dialog"],
+    "HTTPMethodString": ["GET", "POST", "PUT", "DELETE"],
+    "TypeString": ["submit", "reset", "button", "menu"],
+    "AlignString": ["left", "right", "justify", "center"],
+    "vAlignString": ["top", "middle", "bottom", "baseline"],
+    "FeaturePolicyString": ["allowsFeature", "features", "allowedFeatures", "getAllowlistForFeature"],
+    "SandboxString": ["allow-forms", "allow-pointer-lock", "allow-popups", "allow-same-origin", "allow-scripts", "allow-top-navigation"],
+    "RefString": ["sync", "async", "auto"],
+    "EagerLazyString": ["eager", "lazy"],
+    "InputtypeString": ["button", "checkbox", "color", "date", "datetime-local", "email", "file", "hidden", "image", "month", "number", "password", "radio", "range", "reset", "search", "submit", "tel", "text", "time", "url", "week", "datetime"],
+    "PreloadString": ["none", "metadata", "auto"],
+    "DateTimeString": ["0062-02-05", "1993-11-01", "2021-07-01", "2162-02-05"],
+    "ValueTypeString": ["data", "ref", "object"],
+    "SelectionDirectionString": ["forward", "backward", "none"],
+    "KindString": ["subtitles", "captions", "descriptions", "chapters", "metadata"],
+    "PositionString": ["beforebegin", "afterbegin", "beforeend", "afterend"],
+    "ReadyStateString": ["loading", "interactive", "complete"]
+    
+
+
+    
+
+}

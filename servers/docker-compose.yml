@@ -1,0 +1,68 @@
+version: "3.5"
+services:
+  idx_0:
+    build: dockers/idx_0
+    ports:
+      - "7000:5000"
+    volumes:
+      - ./data/idx_0:/data
+  idx_1:
+    build: dockers/idx_1
+    ports:
+      - "7001:5000"
+    volumes:
+      - ./data/idx_1:/data
+  idx_2:
+    build: dockers/idx_2
+    ports:
+      - "7002:5000"
+    volumes:
+      - ./data/idx_2:/data
+  idx_3:
+    build: dockers/idx_3
+    ports:
+      - "7003:5000"
+    volumes:
+      - ./data/idx_3:/data
+  idx_4:
+    build: dockers/idx_4
+    ports:
+      - "7004:5000"
+    volumes:
+      - ./data/idx_4:/data
+  idx_5:
+    build: dockers/idx_5
+    ports:
+      - "7005:5000"
+    volumes:
+      - ./data/idx_5:/data
+  idx_6:
+    build: dockers/idx_6
+    ports:
+      - "7006:5000"
+    volumes:
+      - ./data/idx_6:/data
+  idx_7:
+    build: dockers/idx_7
+    ports:
+      - "7007:5000"
+    volumes:
+      - ./data/idx_7:/data
+  idx_8:
+    build: dockers/idx_8
+    ports:
+      - "7008:5000"
+    volumes:
+      - ./data/idx_8:/data
+  idx_9:
+    build: dockers/idx_9
+    ports:
+      - "7009:5000"
+    volumes:
+      - ./data/idx_9:/data
+  idx_10:
+    build: dockers/idx_10
+    ports:
+      - "7010:5000"
+    volumes:
+      - ./data/idx_10:/data
